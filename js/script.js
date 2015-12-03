@@ -96,12 +96,12 @@ answerCity = prompt('Did I grow up in Washington state?').toUpperCase();
 //return the function result to while loop
    function checkNumber()
    {
-     if(userNumber > 0 && userNumber < 100)
+     if(userNumber < 100)
      {
-       alert('oh No, your number is too Low!');
+       alert('oh No, your number is too too Low!');
        return false;
      }
-     else if (userNumber > 100 && userNumber < 250)
+     else if (userNumber >= 100 && userNumber < 250)
     {
       alert('oh No, your number is Low!');
        return false;
@@ -111,7 +111,7 @@ answerCity = prompt('Did I grow up in Washington state?').toUpperCase();
       alert('oh No, your number is high!');
        return false;
      }
-     else if (userNumber > 350 && userNumber <= 500)
+     else if (userNumber > 350 && userNumber < 500)
     {
       alert('oh No, your number is too high!');
        return false;
