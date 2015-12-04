@@ -50,10 +50,12 @@ function questionCity(){
    {
         countCorrectAnswer++;
         //alert('Well Done!, You got it right ' + userName + '!');
+        answer.className = 'green';
         answer.textContent='Well Done!, You got it right ' + userName + '!';
    }
    else {
      //alert('Sorry ' + userName + '!' + ' I grew up in Tehran');
+      answer.className = 'red';
       answer.textContent='Sorry ' + userName + '!' + ' I grew up in Tehran';
    }
 }
@@ -63,10 +65,12 @@ function questionSport() {
  answerSport = prompt("Is my favorite sport TRX?").toUpperCase();
    if (answerSport =='YES' || answerSport=='Y') {
       countCorrectAnswer++;
+      answer.className = 'green';
       answer.textContent='Well Done!, You got it right ' + userName + '!';
      //alert('Well Done!, You got it right ' + userName + '!');
    } else {
     //  alert('Sorry ' + userName + '!' + ' My Favorite sport is TRX!');
+     answer.className = 'red';
      answer.textContent='Sorry ' + userName + '!' + ' My Favorite sport is TRX!';
    }
 }
@@ -77,9 +81,11 @@ function questionColor(){
    if (answerColor=='YES' || answerColor=='Y')
    {
      countCorrectAnswer++;
+     answer.className = 'green';
      answer.textContent = 'Well Done!, You got it right ' + userName + '!';
     // alert('Well Done!, You got it right ' + userName + '!');
    } else {
+     answer.className = red;
      answer.textContent = 'Sorry ' + userName + '!' + ' My Favorite Color is Green!';
      //alert('Sorry ' + userName + '!' + ' My Favorite Color is Green!');
    }
@@ -91,18 +97,21 @@ function questionFavoriteBook(){
      if (answerBook=='YES' || answerBook=='Y')
      {
        countCorrectAnswer++;
+       answer.className = 'green';
        answer.textContent = 'Well Done!, You got it right ' + userName + '!';
        //alert('Well Done!, You got it right ' + userName + '!');
      }
      else
      {
+       answer.className = 'red';
        answer.textContent = 'Sorry ' + userName + '!' + ' My Favorite Book is HTML & CSS!';
        //alert('Sorry ' + userName + '!' + ' My Favorite Book is HTML & CSS!');
      }
 }
 function resultCorrectAnswers(){
   //show user number of correct answers
-  var result= document.getElementById('correctAnwser')
+  var result= document.getElementById('correctAnwser');
+  result.className = 'green';
   result.textContent = userName + ' you got '+ countCorrectAnswer + ' correct answers out of 4 questions';
   //alert(userName + ' you got '+ countCorrectAnswer + ' correct answers out of 4 questions');
 }
@@ -161,7 +170,8 @@ function questionGuessWeather(){
    //check that user's anwer exist is our array
    if(arrayOfWeather.indexOf(userWeatherAnswer)!== -1){
       correctweatheranswer = true;
-      var answer = document.getElementById('weatherId')
+      var answer = document.getElementById('weatherId');
+      answer.className = 'green';
       answer.textContent = 'Wel Done, You guess right!';
       //alert('Wel Done, You guess right!');
     }
