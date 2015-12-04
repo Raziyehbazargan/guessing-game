@@ -3,18 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>Greeting & guessing game</title>
+    <style>
+    </style>
   </head>
-  <body style="background:lightblue">
+  <body>
+    <div style="background-color:lightblue">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+      </ul>
+    </div><hr/>
     <h1>Make a greeting script and design a guessing game!</h1>
     <p>
-      <ul style="A">
+      <ul>
         <li>Define a Script tag before the end of body</li>
-        <li>Define 3 variables for get the answer from user like :answer_city,answer_sport,answer_color and 2 variables for check correct and wrong answer and 1 variable to store User name</li>
-        <li>Using if statement for ask the question from users by prompt</li>
+        <li>Define variables:</li>
+        <br/>
+          <ol style="color:darkblue"><em>
+            <li>User Name: store the User Name</li>
+            <li>answerCity, answerSport, answerColor, answerBook: store User's answers to four questions</li>
+            <li>countCorrectAnswer: count the correct answers</li>
+            <li>guessNumber: in question No5 ,this variable store guess number by user</li>
+            <li>finished: check until user get correct guess , this variable has false variable </li>
+            <li>myNum: set a number and ask user to guess, it has a value equal 250</li>
+            <li>arrayOfWeather=['rainy','sunny','cloudy','breezy']: set a array with answers and ask user to guess</li>
+          </em></ol><br/>
+
+        <li>Using if statement for ask the four questions from users by prompt</li>
         <li>store user's answers in variables</li>
-        <li>if the answer is true increase count_correct variable and if the answer is false concerate the variable for wrong answer</li>
-        <li>using alert command to show the number of correct answer by count_correct variable.</li>
-        <li>using alert command to show the wrong answers</li>
+        <li>if the answer is true increase countCorrectAnswer variable</li>
+        <li>using alert to show the number of correct answers</li>
+        <li>Ask question 5 : guessing a number , check the number and show the alert to user</li>
+        <li>Ask question 6 : check the user's answer by array items and show the alert to user</li>
       </ul>
     </p>
 
