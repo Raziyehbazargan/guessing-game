@@ -4,3 +4,10 @@
 .red{
   color:red;
 }
+header,footer {
+   background-color: darkblue;
+   color: white;
+}
+header ul a{
+  color:white;
+}
