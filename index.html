@@ -6,29 +6,39 @@
     <link rel="stylesheet" href="css\style.css">
   </head>
   <body>
-    <p id="welcome"><strong></strong></p>
-    <div style="background-color:lightblue">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="aboutme.html">About Me</a></li>
-      </ul>
-    </div><hr/>
 
+    <!-- Header-->
+    <header>
+      <p id="welcome"><strong></strong></p>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutme.html">About Me</a></li>
+        </ul>
+      <hr/>
+    </header>
+
+
+    <!-- Section -->
+    <section>
     <h1>Make a greeting script and design a guessing game!</h1>
     <p>
       <ul>
         <li>Define a Script tag before the end of body</li>
         <li>Define variables:</li>
+
         <br/>
-          <ol style="color:darkblue"><em>
-            <li>User Name: store the User Name</li>
-            <li>answerCity, answerSport, answerColor, answerBook: store User's answers to four questions</li>
-            <li>countCorrectAnswer: count the correct answers</li>
-            <li>guessNumber: in question No5 ,this variable store guess number by user</li>
-            <li>finished: check until user get correct guess , this variable has false variable </li>
-            <li>myNum: set a number and ask user to guess, it has a value equal 250</li>
-            <li>arrayOfWeather=['rainy','sunny','cloudy','breezy']: set a array with answers and ask user to guess</li>
-          </em></ol><br/>
+          <ol style="color:darkblue">
+            <em>
+              <li>User Name: store the User Name</li>
+              <li>answerCity, answerSport, answerColor, answerBook: store User's answers to four questions</li>
+              <li>countCorrectAnswer: count the correct answers</li>
+              <li>guessNumber: in question No5 ,this variable store guess number by user</li>
+              <li>finished: check until user get correct guess , this variable has false variable </li>
+              <li>myNum: set a number and ask user to guess, it has a value equal 250</li>
+              <li>arrayOfWeather=['rainy','sunny','cloudy','breezy']: set a array with answers and ask user to guess</li>
+            </em>
+          </ol>
+        <br/>
 
         <li>Using if statement for ask the four questions from users by prompt</li>
         <li>store user's answers in variables</li>
@@ -45,22 +55,36 @@
       My plan after this class is move on to next course and after that working as an entry level web developer.
       My long-term goals : to be a senior web developer in 5 years for that I need both experience and the knowledge
       so I try to get as much as training that I can in first year.
-    </p> <br/><hr/>
+    </p>
+    <br/><hr/>
 
-      <h2>User's answers</h2>
+    <h2>User's answers</h2>
 
-      <h4>Did I grow up in Washington state?</h4>
-        <p id="cityId"></p>
-      <h4>Is  TRX my favorite sport?</h4>
-        <p id="sportId"></p>
-      <h4>Is my favorite color Green?</h4>
-        <p id="colorId"></p>
-      <h4>Is HTML CSS my favorite book ?</h4>
-        <p id="bookId"></p>
-      <h4>Please guess my favorite Weather?</h4>
-        <p id="weatherId"></p>
+    <h4>Did I grow up in Washington state?</h4>
+    <p id="cityId"></p>
+
+    <h4>Is  TRX my favorite sport?</h4>
+    <p id="sportId"></p>
+
+    <h4>Is my favorite color Green?</h4>
+    <p id="colorId"></p>
+
+    <h4>Is HTML CSS my favorite book ?</h4>
+    <p id="bookId"></p>
+
+    <h4>Please guess my favorite Weather?</h4>
+    <p id="weatherId"></p>
 
       <p id="correctAnwser" style="color:red"></p>
     <script src="js/script.js"></script>
+  </section>
+
+
+<!-- Footer-->
+  <footer>
+    <hr/>
+    <p>CodeFellows Courses :201</p>
+    <br>
+  </footer>
   </body>
 </html>
