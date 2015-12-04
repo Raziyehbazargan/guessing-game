@@ -23,17 +23,17 @@ var myNum = 250;
 var arrayOfWeather=['rainy','sunny','cloudy','breezy'];
 
 
-//Part 1 :get Username of user and change it to UpperCase
+//Part 1 :get Username of user and convert it to UpperCase
 userName = prompt('What is your name?').toUpperCase();
 console.log('the Name of User is :' + userName);
 
 //show the Appropriate messeage to user
 alert('Good to meet you ' + userName + '! ' + ' enjoy your doughnuts');
 
-//Part 2 : anwser questions one from User
+//Part 2 : ask question No1 from User
 answerCity = prompt('Did I grow up in Washington state?').toUpperCase();
 
-//Ask  First question from User
+//check user's answer - because before convert user's answer to uppercase, here just check by NO or N
  if (answerCity =='NO' || answerCity=='N')
  {
       countCorrectAnswer++;
@@ -43,7 +43,7 @@ answerCity = prompt('Did I grow up in Washington state?').toUpperCase();
    alert('Sorry ' + userName + '!' + ' I grew up in Tehran');
  }
 
- //Ask  Secound question from User
+ //Ask  and check Secound question from User- because before convert user's answer to uppercase, here just check by YES or Y
  answerSport = prompt("Is my favorite sport TRX?").toUpperCase();
    if (answerSport =='YES' || answerSport=='Y')
    {
@@ -55,7 +55,7 @@ answerCity = prompt('Did I grow up in Washington state?').toUpperCase();
    alert('Sorry ' + userName + '!' + ' My Favorite sport is TRX!');
    }
 
-  //Ask  Third question from User
+  //Ask  and check Third question from User- because before convert user's answer to uppercase, here just check by YES or Y
  answerColor = prompt(' Is my favorite color Green?').toUpperCase();;
    if (answerColor=='YES' || answerColor=='Y')
    {
@@ -67,7 +67,7 @@ answerCity = prompt('Did I grow up in Washington state?').toUpperCase();
      alert('Sorry ' + userName + '!' + ' My Favorite Color is Green!');
    }
 
-   //Ask  Fourth question from User
+   //Ask  and check Fourth question from User- because before convert user's answer to uppercase, here just check by YES or Y
    answerBook = prompt(' Is HTML & CSS my favorite book ?').toUpperCase();;
      if (answerColor=='YES' || answerColor=='Y')
      {
@@ -84,7 +84,7 @@ answerCity = prompt('Did I grow up in Washington state?').toUpperCase();
    alert(userName + ' you got '+ countCorrectAnswer + ' correct answers out of 3 questions');
 
 
-//Part 3 : Guessing a number by user
+//Part 3 : Guessing a number by user; finished is a variable with default value=false
    while (!finished)
    {
       var userNumber = parseInt(prompt('I\'m thinking of a number between 100 and 300 , Guess it!'));
@@ -133,7 +133,7 @@ var correctweatheranswer = false;
 while (!correctweatheranswer)
  {
    //get the answer from user by a prompt and convert the answer to lowercase
-   var userWeatherAnswer = prompt('Please guess my favorite Weather! you can have 3 guess!' + '\n' + 'Rainy,sunny,Cloudy,breezy').toLowerCase();
+   var userWeatherAnswer = prompt('Please guess my favorite Weather!' + '\n' + 'rainy,sunny,cloudy,breezy').toLowerCase();
 
    //check that user's anwer exist is our array
    if(arrayOfWeather.indexOf(userWeatherAnswer)!== -1)
