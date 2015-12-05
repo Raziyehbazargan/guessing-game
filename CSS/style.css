@@ -4,10 +4,42 @@
 .red{
   color:red;
 }
+
 header,footer {
-   background-color: darkblue;
+   background-color: black;
    color: white;
+   padding: 20px;
+}
+header ul a:hover{
+  color:yellow;
 }
 header ul a{
   color:white;
+  text-decoration: none;
+}
+header ul li {
+  list-style: none;
+  display: inline;
+  padding: .2em 1em
+}
+footer{
+  text-align: center;
+  clear: both;
+  margin-bottom: 0px;
+}
+section{
+  float: left;
+  width: 63%;
+}
+aside{
+  float: right;
+  width: 30%;
+}
+section,aside{
+  border: 1px solid black;
+  border-radius: 6px;
+  display: block;
+  padding: 24px 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
