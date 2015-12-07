@@ -46,15 +46,11 @@ function questionCity(){
   //Part 2 : ask question No1 from User
   answerCity = prompt('Did I grow up in Washington state?').toUpperCase();
   //check user's answer - because before convert user's answer to uppercase, here just check by NO or N
-   if (answerCity =='NO' || answerCity=='N')
-   {
+   if (answerCity =='NO' || answerCity=='N'){
         countCorrectAnswer++;
-        //alert('Well Done!, You got it right ' + userName + '!');
         answer.className = 'green';
         answer.textContent='Well Done!, You got it right ' + userName + '!';
-   }
-   else {
-     //alert('Sorry ' + userName + '!' + ' I grew up in Tehran');
+   } else {
       answer.className = 'red';
       answer.textContent='Sorry ' + userName + '!' + ' I grew up in Tehran';
    }
@@ -67,53 +63,39 @@ function questionSport() {
       countCorrectAnswer++;
       answer.className = 'green';
       answer.textContent='Well Done!, You got it right ' + userName + '!';
-     //alert('Well Done!, You got it right ' + userName + '!');
    } else {
-    //  alert('Sorry ' + userName + '!' + ' My Favorite sport is TRX!');
      answer.className = 'red';
      answer.textContent='Sorry ' + userName + '!' + ' My Favorite sport is TRX!';
    }
 }
 function questionColor(){
-  var answer = document.getElementById('colorId')
+  var answer = document.getElementById('colorId');
   answerColor = prompt(' Is my favorite color Green?').toUpperCase();
-  //Ask  and check Third question from User- because before convert user's answer to uppercase, here just check by YES or Y
-   if (answerColor=='YES' || answerColor=='Y')
-   {
+   if (answerColor =='YES' || answerColor =='Y'){
      countCorrectAnswer++;
      answer.className = 'green';
      answer.textContent = 'Well Done!, You got it right ' + userName + '!';
-    // alert('Well Done!, You got it right ' + userName + '!');
    } else {
-     answer.className = red;
+     answer.className = 'red';
      answer.textContent = 'Sorry ' + userName + '!' + ' My Favorite Color is Green!';
-     //alert('Sorry ' + userName + '!' + ' My Favorite Color is Green!');
    }
 }
 function questionFavoriteBook(){
-  var answer = document.getElementById('bookId')
-   //Ask  and check Fourth question from User- because before convert user's answer to uppercase, here just check by YES or Y
-   answerBook = prompt(' Is HTML & CSS my favorite book ?').toUpperCase();;
-     if (answerBook=='YES' || answerBook=='Y')
-     {
+  var answer = document.getElementById('bookId');
+   answerBook = prompt(' Is HTML & CSS my favorite book ?').toUpperCase();
+     if (answerBook=='YES' || answerBook=='Y') {
        countCorrectAnswer++;
        answer.className = 'green';
        answer.textContent = 'Well Done!, You got it right ' + userName + '!';
-       //alert('Well Done!, You got it right ' + userName + '!');
-     }
-     else
-     {
+     } else {
        answer.className = 'red';
        answer.textContent = 'Sorry ' + userName + '!' + ' My Favorite Book is HTML & CSS!';
-       //alert('Sorry ' + userName + '!' + ' My Favorite Book is HTML & CSS!');
      }
 }
 function resultCorrectAnswers(){
-  //show user number of correct answers
   var result= document.getElementById('correctAnwser');
   result.className = 'green';
   result.textContent = userName + ' you got '+ countCorrectAnswer + ' correct answers out of 4 questions';
-  //alert(userName + ' you got '+ countCorrectAnswer + ' correct answers out of 4 questions');
 }
 
 
