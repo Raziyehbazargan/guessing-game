@@ -137,8 +137,8 @@ function checkNumber(){
       }
       else if(userNumber === myNum)
       {
-        return true;
         alert('Well Done!');
+        return true;
       }
     }
 
