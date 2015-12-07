@@ -123,8 +123,8 @@ answerCity = prompt('Did I grow up in Washington state?').toUpperCase();
       }
       else if(userNumber === myNum)
       {
-        return true;
         alert('Well Done!');
+        return true;
       }
     }
 
